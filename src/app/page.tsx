@@ -1,10 +1,16 @@
-import Image from 'next/image'
+import { Footer, Top } from '@/layouts'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Welcome.</h1>
-    </main>
+    <>
+      <Top />
+
+      <main className={styles.main}>
+        <h1>Welcome.</h1>
+      </main>
+
+      <Footer />
+    </>
   )
 }
