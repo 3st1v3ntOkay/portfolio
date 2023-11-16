@@ -19,3 +19,5 @@ I will let you links to useful documentation to understand better these properti
 - [border-image-slice](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice)
 
 - [border-image-source](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source)
+
+- [background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
