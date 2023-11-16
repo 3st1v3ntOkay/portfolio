@@ -1,0 +1,27 @@
+.search-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 272px;
+  height: auto;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--seasalt, #f8f9fa);
+}
+
+.page {
+  font-size: var(--font-ms-12, 11.24px);
+  font-weight: var(--medium, 500);
+}
+
+/* Este serian estilos para un componente boton */
+.button {
+  border: 0.6px solid var(--platinum);
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  font-family: inherit, var(--font-mono);
+  font-size: var(--font-ms-11, 11.24px);
+  font-weight: var(--medium, 500);
+}
