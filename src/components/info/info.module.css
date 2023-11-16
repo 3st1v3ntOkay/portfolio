@@ -1,0 +1,20 @@
+.info { 
+  width: 576px;
+  height: auto;
+  padding: var(--pad-16, 16px);
+  
+  background: rgba(151, 71, 255, 0.05);
+  border: 0.6px solid var(--veronica, #9747ff);
+  border-radius: var(--border-radius);
+
+  /* border-image is the shortcut I know, but I preferred to use each property separately to better understand its behavior */
+  /* border-image-source: url("./images/cNWGH.png");
+  border-image-repeat: round;
+  border-image-slice: 0.6;
+  border-image-width: auto; */
+
+  font-family: inherit, var(--font-mono);
+  font-size: var(--font-ms-14, 11.24px);
+  font-weight: var(--medium, 500);
+  color: var(--veronica, #9747ff);
+}
