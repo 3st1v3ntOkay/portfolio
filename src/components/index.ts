@@ -1,7 +1,7 @@
-export { default as Language } from './language'
-export { default as Search } from './search'
-export { default as Info } from './info'
-export { default as Card } from './card'
+export { default as Language } from './language/language'
+export { default as Search } from './search/search'
+export { default as Info } from './info/info'
+export { Card, CardPerson, CardPersonMini } from './card'
 
 export {
   ButtonSimpleFill,
