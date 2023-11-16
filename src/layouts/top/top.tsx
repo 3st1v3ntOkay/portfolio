@@ -1,9 +1,10 @@
 import React from 'react'
 import { Info, Language, Search } from '@/components'
+import style from './top.module.css'
 
 const Top = () => {
   return (
-    <header>
+    <header className={style.header}>
       <Info />
       <Search />
       <Language />
