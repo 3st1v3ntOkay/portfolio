@@ -1,3 +1,10 @@
-.header {
-  padding: 16px;
+.menu {
+  max-width: 576px;
+  height: auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: var(--gap-32, 32px);
 }

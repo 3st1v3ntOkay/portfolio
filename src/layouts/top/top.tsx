@@ -4,10 +4,12 @@ import style from './top.module.css'
 
 const Top = () => {
   return (
-    <header className={style.header}>
+    <header>
       <Info />
-      <Search />
-      <Language />
+      <section className={style.menu}>
+        <Search />
+        <Language />
+      </section>
     </header>
   )
 }
