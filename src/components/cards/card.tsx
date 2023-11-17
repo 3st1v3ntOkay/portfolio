@@ -38,6 +38,7 @@ const Card = ({ title, description, image }: Props) => {
   )
 }
 
+// * Componente terminado
 const CardPerson = ({ children, image }: Props2) => {
   return (
     <article className={style["card_person"]}>
