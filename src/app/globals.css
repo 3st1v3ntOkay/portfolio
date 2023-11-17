@@ -17,7 +17,8 @@
   --celestial-blue: #0597ea;
 
   --border-radius: 4px;
-  /* --border-width: 4px; */
+  --border-platinum: 0.6px solid var(--platinum, #DEE2E6);
+  --border-veronica: 0.6px solid var(--veronica, #9747ff);
 
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -63,6 +64,7 @@
   --gap-24: 24px;
   --gap-32: 32px;
   --gap-48: 48px;
+  --gap-64: 64px;
 }
 
 * {
@@ -74,5 +76,12 @@
 html,
 body {
   background-color: var(--white, #ffffff);
-  color: var(--night, #121417)
+  color: var(--night, #121417);
+
+  margin-block: 16px;
+}
+
+html::selection,
+body::selection {
+  color: var(--veronica);
 }
