@@ -1,0 +1,19 @@
+.key {
+  width: fit-content;
+  height: auto;
+  padding: 4px 8px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-8, 8px);
+
+  border-radius: var(--border-radius, 4px);
+
+  font-family: inherit;
+  font-size: var(--font-ms-11, 11.24px);
+  font-weight: var(--semibold, 600);
+  color: var(--night, #121417);
+
+  background-color: var(--white, #ffffff);
+  border: 0.6px solid var(--default-french-gray, #CED4DA);
+}
