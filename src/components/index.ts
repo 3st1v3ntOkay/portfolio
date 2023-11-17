@@ -1,6 +1,7 @@
 export { Language } from './language/'
 export { Search } from './search/'
 export { Info } from './info'
+export { Key } from './keys'
 
 export {
   Card,
