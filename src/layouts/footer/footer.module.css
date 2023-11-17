@@ -1,5 +1,5 @@
 .footer {
-  max-width: 576px;
+  width: 576px;
   height: auto;
   padding: var(--pad-16, 16px);
   
@@ -7,10 +7,8 @@
   justify-content: flex-end;
 
   background-color: rgba(222, 226, 230, 0.05);
-  /* border: 0.6px solid var(--platinum, #DEE2E6); */
   border-radius: var(--border-radius);
 
-  /* border-image is the shortcut I know, but I preferred to use each property separately to better understand its behavior; aun se puede mejorar pero por ahora dejarlo asi */
   border-image-source: url("./images/border-60.svg");
   border-image-repeat: space round;
   border-image-slice: 1;
@@ -50,4 +48,16 @@
   font-size: var(--font-size-12, 12.64px);
   font-weight: var(--bold, 700);
   color: var(--celestial-blue, #0597EA);
+}
+
+@media (width < 768px) {
+  .footer {
+    width: calc(576px - 150px);
+  }
+}
+
+@media (width < 475px) {
+  .footer {
+    width: 100%;
+  }
 }
