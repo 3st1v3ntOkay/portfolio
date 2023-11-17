@@ -1,6 +1,6 @@
 import { Footer, Top } from '@/layouts'
 import style from './page.module.css'
-import { Card, CardPerson, CardPersonMini } from '@/components'
+import { ButtonHeroiconOutline, Card } from '@/components'
 import { catFace1 } from '@/assets/emoji/emoji-cat';
 
 export default function Home() {
@@ -10,28 +10,53 @@ export default function Home() {
   }];
 
   return (
-    <>
-      <Top />
+    <div className={style["content-grid"]}>
+      <div className={`${style["top"]} ${style.breakout}`}>
+        <Top />
+      </div>
 
-      <main className={style.main}>
-        <h1>Welcome.</h1>
+      <main className={`${style["main"]} ${style.breakout}`}>
+        <div className={style["content-main"]}>
+          <h1 className={style["title-main"]}>Welcome.</h1>
+          <p className={style["p-main"]}>I introduce myself as Esteban Jimenez Valdez (a 21 years old guy). A couple of years ago, I embarked on my programming journey. With the dedication and effort, I enthusiastically continue on this amazing path, eager to take on new challenges.</p>
 
-        <Card
-          title={info[0].title}
-          description={info[0].description}
-          image={catFace1}
-        />
+          <div className={style["content-x-main"]}>
+            <ButtonHeroiconOutline left={false} right={true}>
+              check
+            </ButtonHeroiconOutline>
+            <ButtonHeroiconOutline left={false} right={true}>
+              check
+            </ButtonHeroiconOutline>
+          </div>
+        </div>
 
-        <CardPerson image={catFace1}>
-          Jack Herrington
-        </CardPerson>
-
-        <CardPersonMini image={catFace1}>
-          Jack Herrington
-        </CardPersonMini>
+        <div className={style["list-card"]}>
+          <Card
+            title={info[0].title}
+            description={info[0].description}
+            image={catFace1}
+          />
+          <Card
+            title={info[0].title}
+            description={info[0].description}
+            image={catFace1}
+          />
+          <Card
+            title={info[0].title}
+            description={info[0].description}
+            image={catFace1}
+          />
+          <Card
+            title={info[0].title}
+            description={info[0].description}
+            image={catFace1}
+          />
+        </div>
       </main>
 
-      <Footer />
-    </>
+      <div className={`${style["bottom"]} ${style.breakout}`}>
+        <Footer />
+      </div>
+    </div>
   )
 }
