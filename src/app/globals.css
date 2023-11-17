@@ -8,13 +8,17 @@
   --outer-space: #495057;
   --onyx: #343A40;
   --eerie-black: #212529;
-  
+
   --white: #ffffff;
   --night: #121417;
 
   --veronica: #9747FF;
+  --grape: #6c2cc0;
+  --celestial-blue: #0597ea;
 
   --border-radius: 4px;
+  /* --border-width: 4px; */
+
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
@@ -56,7 +60,9 @@
 
   --gap-8: 8px;
   --gap-16: 16px;
+  --gap-24: 24px;
   --gap-32: 32px;
+  --gap-48: 48px;
 }
 
 * {
