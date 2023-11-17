@@ -1,6 +1,6 @@
 /* Card */
 .card {
-  max-width: 576px;
+  width: 576px;
   padding: var(--pad-16, 16px);
   
   display: flex;
@@ -31,8 +31,6 @@
 
 /* Card Person */
 .card_person {
-  /* width: auto;
-  height: auto; */
   padding: 16px;
 
   display: flex;
@@ -162,4 +160,15 @@
   gap: var(--gap-16, 16px);
 }
 
+/* Media queries */
 
+@media (width < 768px) {
+  .card {
+    width: calc(576px - 150px);
+  }
+}
+@media (width < 475px) {
+  .card {
+    width: 100%;
+  }
+}
