@@ -4,10 +4,7 @@
   padding: var(--pad-16, 16px);
   
   background-color: rgba(151, 71, 255, 0.05);
-  /* border: 0.6px solid var(--veronica, #9747ff); */
   border-radius: var(--border-radius);
-
-  /* border-image is the shortcut I know, but I preferred to use each property separately to better understand its behavior; aun se puede mejorar pero por ahora dejarlo asi */
   border-image-source: url("./images/border-60.svg");
   border-image-repeat: space round;
   border-image-slice: 1;
@@ -17,4 +14,16 @@
   font-size: var(--font-ms-14, 11.24px);
   font-weight: var(--medium, 500);
   color: var(--veronica, #9747ff);
+}
+
+@media (width < 768px) {
+  .info {
+    width: calc(576px - 150px);
+  }
+}
+
+@media (width < 475px) {
+  .info {
+    width: 100%;
+  }
 }
