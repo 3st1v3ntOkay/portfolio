@@ -9,6 +9,7 @@
   padding: 4px 8px;
   border-radius: 4px;
   background-color: var(--seasalt, #f8f9fa);
+  cursor: pointer;
 }
 
 .page {
