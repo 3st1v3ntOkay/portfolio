@@ -1,0 +1,26 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flechas">
+<g clip-path="url(#clip0_58_529)">
+<g id="Clip path group">
+<mask id="mask0_58_529" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+<g id="clip0_616_1501">
+<path id="Vector" d="M36 0H0V36H36V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_58_529)">
+<g id="Group">
+<path id="Vector_2" d="M36 0H0V36H36V0Z" fill="#252422"/>
+<path id="Vector_3" d="M33.75 0H2.25C1.00736 0 0 1.00736 0 2.25V33.75C0 34.9926 1.00736 36 2.25 36H33.75C34.9926 36 36 34.9926 36 33.75V2.25C36 1.00736 34.9926 0 33.75 0Z" fill="white"/>
+<path id="Vector_4" d="M14.8001 26.7504V14.5877C17.3932 13.6741 18.5338 13.5518 20.3747 13.5741C21.5074 10.0561 20.8128 8.85836 15.6447 9.0131C13.2749 9.32568 12.0848 9.68813 10.2391 10.7024C9.04098 11.5723 8.82914 12.151 8.71875 13.2363V24.8922C9.14088 27.049 10.6841 27.3008 14.8001 26.7504Z" fill="#252422"/>
+<path id="Vector_5" d="M23.9221 26.9191C25.8813 26.9191 27.4696 25.3309 27.4696 23.3717C27.4696 21.4125 25.8813 19.8242 23.9221 19.8242C21.9629 19.8242 20.3746 21.4125 20.3746 23.3717C20.3746 25.3309 21.9629 26.9191 23.9221 26.9191Z" fill="#252422"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_58_529">
+<rect width="36" height="36" rx="6" fill="white"/>
+</clipPath>
+</defs>
+</svg>
