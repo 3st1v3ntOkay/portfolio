@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "read:icons": "node --watch ./src/utils/rename-files.mjs"
   },
   "dependencies": {
     "geist": "1.1.0",
