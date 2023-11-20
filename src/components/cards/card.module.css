@@ -29,6 +29,10 @@
   font-weight: var(--medium, 500);
 }
 
+/* .icon-card {
+  cursor: pointer;
+} */
+
 /* Card Person */
 .card_person {
   padding: 16px;
