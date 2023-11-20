@@ -75,6 +75,23 @@
   gap: var(--gap-16, 16);
 }
 
+.technologies {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-32, 32px);
+}
+
+.multiple {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-16, 16px);
+}
+
+.ul {
+  list-style-image: url("../../assets/emoji/object/pushpin.svg");
+  list-style-position: inside;
+}
+
 @media (width < 768px) {
   .content-main {
     width: calc(576px - 150px);
