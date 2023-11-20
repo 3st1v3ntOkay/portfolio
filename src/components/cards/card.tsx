@@ -1,11 +1,13 @@
 import style from './card.module.css';
 import { ButtonHeroiconFill, ButtonHeroiconOutline } from '@/components'
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Props {
   title: string
   description: string
   image: string
+  link: string
 }
 
 interface Props2 {
@@ -14,13 +16,14 @@ interface Props2 {
 }
 
 // * Componente terminado
-const Card = ({ title, description, image }: Props) => {
+const Card = ({ title, description, image, link = "#" }: Props) => {
   return (
     <article className={style["card"]}>
       <div className={style["relative-card"]}>
         <div className={style["content-x-card"]}>
           <h2 className={style["title-card"]}>{title}</h2>
           <Image
+            className={style["icon-card"]}
             src={image}
             width={32}
             height={32}
@@ -31,9 +34,11 @@ const Card = ({ title, description, image }: Props) => {
         <p>{description}</p>
       </div>
 
-      <ButtonHeroiconFill left={false} right={true}>
-        check
-      </ButtonHeroiconFill>
+      <Link href={link} className={style.url}>
+        <ButtonHeroiconFill left={false} right={true}>
+            check
+        </ButtonHeroiconFill>
+      </Link>
     </article>
   )
 }
