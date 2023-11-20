@@ -3,6 +3,7 @@
 ### Tasks
 
 - [ ] Analizar rendimiento entre mis componentes SVG o Image
+- [ ] Ver si aplicar 'composition' para agregar iconos al gusto
 
 ### Bugs
 
