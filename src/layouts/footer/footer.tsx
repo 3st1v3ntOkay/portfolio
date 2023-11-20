@@ -17,7 +17,7 @@ const Footer = () => {
           />
           <div className={style["content-y"]}>
             <p className={style.version}>version 1.0.0</p>
-            <Link href='#' className={style.url}>me.com</Link>
+            <p className={style.url}>me.com</p>
           </div>
         </div>
       </div>
