@@ -1,10 +1,24 @@
 import React from 'react'
+import style from './page.module.css'
+import { Footer, Top } from '@/layouts'
+import Link from 'next/link'
 
 const Follow = () => {
   return (
-    <main>
-      <h1>Greats.</h1>
-    </main>
+    <div className={style["content-grid"]}>
+      <div className={`${style["top"]} ${style.breakout}`}>
+        <Top />
+      </div>
+
+      <main className={`${style["main"]} ${style.breakout}`}>
+        <h1>Follow page.</h1>
+        <Link href="/">Home</Link>
+      </main>
+
+      <div className={`${style["bottom"]} ${style.breakout}`}>
+        <Footer />
+      </div>
+    </div>
   )
 }
 

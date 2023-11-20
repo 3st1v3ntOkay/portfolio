@@ -2,6 +2,8 @@
 
 - [ ] Ver como aplicar el grid con componentes, una idea es parale las clases por props
 - [ ] Cuando sea muy pequeno ver que onda, segun yo 200px ya es muy pequeno
+- [ ] Ver si conviene cambiar a 'composition' para pasar los datos a sus hijos para evitar 'Prop drilling'; tambien tener en considerarcion si vale la pena cuales pasar y cuales no, hacer como una mezcla
+- [ ] Ver si es correcto poner un boton dentro de una etiqueta `<a>`
 
 ## URLs
 
