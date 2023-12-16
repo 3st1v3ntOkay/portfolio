@@ -23,6 +23,10 @@
   --border-platinum: 0.6px solid var(--platinum, #DEE2E6);
   --border-veronica: 0.6px solid var(--veronica, #9747ff);
 
+  /* font stack */
+  --font-stack: inherit, -apple-system, BlinkMacSystemFont, "Seoe UI", Roboto, sans-serif;
+  --simple-font-stack: inherit, system-ui, sans-serif;
+  
   /* font size scaled in minor third */
   --h1-size: 2.986rem;
   --h2-size: 2.488rem;
