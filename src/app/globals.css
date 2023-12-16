@@ -77,8 +77,10 @@
 body {
   background-color: var(--white, #ffffff);
   color: var(--night, #121417);
-  line-height: 1.5;
+  
+  font-family: var(--font-stack);
   -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
 }
 
 img, picture, video, canvas, svg {
