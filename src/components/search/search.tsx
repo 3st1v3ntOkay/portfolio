@@ -1,15 +1,15 @@
-import { Key } from '..'
-import style from './search.module.css'
+import { Key } from '..';
+import style from './search.module.css';
 
 const Search = () => {
   return (
-    <div className={style['search-content']}>
-      <p className={style.page}>Home</p>
+    <section className={style['search-content']}>
+      <p className={style.p}>Home</p>
       <Key>
         Ctrl B
       </Key>
-    </div>
+    </section>
   )
 }
 
-export default Search
+export { Search };
