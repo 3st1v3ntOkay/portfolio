@@ -1,14 +1,14 @@
 # Useful tips
 
-### How I customised my own border
+## Custom border
 
-First at all this article was who introduce me to this css property I don't remember it exist.
+### Blogs
 
 - [Control the dashed border stroke length and distance between strokes](https://stackoverflow.com/questions/2771171/control-the-dashed-border-stroke-length-and-distance-between-strokes)
 
 - [Customize your CSS Border 🚀](https://kovart.github.io/dashed-border-generator/)
 
-I will let you links to useful documentation to understand better these properties:
+### CSS properties
 
 - [border-image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
 

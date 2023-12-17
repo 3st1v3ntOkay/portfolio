@@ -1,11 +1,8 @@
-import style from './info.module.css'
+import type { ChildrenProps } from '@/models/types';
+import style from './info.module.css';
 
-const Info = () => {
-  return (
-    <p className={style.info}>
-      This page is still under construction, sorry if you see any visual or functional bug, just press Ctrl B and go report section.
-    </p>
-  )
+const Info = ({ children }: ChildrenProps) => {
+  return <p className={style.info}>{children}</p>;
 }
 
-export default Info
+export default Info;

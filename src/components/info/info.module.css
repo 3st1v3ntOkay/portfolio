@@ -5,17 +5,19 @@
   
   background-color: rgba(151, 71, 255, 0.05);
   border-radius: var(--border-radius);
-  border-image-source: url("./images/border-60.svg");
+  border: var(--border-veronica);
+
+  /* border-image-source: url("./images/border-60.svg");
   border-image-repeat: space round;
   border-image-slice: 1;
-  border-image-width: 1px 1px;
+  border-image-width: 1px 1px; */
 
-  font-family: inherit, var(--font-mono);
-  font-size: var(--font-ms-14, 11.24px);
+  font-size: var(--p-sm-size, 0.833rem);
   font-weight: var(--medium, 500);
   color: var(--veronica, #9747ff);
 }
 
+/* ver que tan necesarios son */
 @media (width < 768px) {
   .info {
     width: calc(576px - 150px);
