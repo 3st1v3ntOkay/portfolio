@@ -1,1 +1,1 @@
-export { Key, KeyIcon } from './key'
+export { Key } from './key'
