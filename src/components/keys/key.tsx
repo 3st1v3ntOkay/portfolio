@@ -1,14 +1,8 @@
-import React from 'react';
 import style from './key.module.css';
+import { ChildrenProps } from '@/models/types';
 
-interface Props {
-  children: React.ReactNode
+const Key = ({ children }: ChildrenProps) => {
+  return <p className={style.key}>{children}</p>;
 }
 
-const Key = ({ children }: Props) => {
-  return (
-    <p className={style.key}>{children}</p>
-  )
-}
-
-export default Key
+export { Key };
