@@ -1,15 +1,15 @@
+import Link from 'next/link';
 import style from './language.module.css';
-import { Anchor } from '..';
 
 const Language = () => {
   return (
     <span className={style['language-content']}>
-      <Anchor url='#'>
+      <Link href='#'>
         Spanish
-      </Anchor>
-      <Anchor url='#'>
+      </Link>
+      <Link href='#'>
         English
-      </Anchor>
+      </Link>
     </span>
   )
 }
