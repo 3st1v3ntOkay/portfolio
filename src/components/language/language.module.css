@@ -1,14 +1,11 @@
 .language-content {
-  width: max-content;
+  width: fit-content;
   height: auto;
-  
-  display: flex;
-  flex-direction: row;
-  gap: var(--gap-16, 16px);
+
+  display: inline-flex;
+  column-gap: var(--gap-16, 16px);
 }
 
-.language {
-  color: var(--night, #9747ff);
-  font-weight: var(--light, 300);
-  text-decoration: underline;
+.setted {
+  color: red;
 }

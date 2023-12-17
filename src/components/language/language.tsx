@@ -1,14 +1,17 @@
-'use client'
-
-import style from './language.module.css'
+import style from './language.module.css';
+import { Anchor } from '..';
 
 const Language = () => {
   return (
-    <div className={style['language-content']}>
-      <a href="#" className={style.language}>Español</a>
-      <a href="#" className={style.language} style={{ fontWeight: '600' }}>Inglés</a>
-    </div>
+    <span className={style['language-content']}>
+      <Anchor url='#'>
+        Spanish
+      </Anchor>
+      <Anchor url='#'>
+        English
+      </Anchor>
+    </span>
   )
 }
 
-export default Language
+export { Language };

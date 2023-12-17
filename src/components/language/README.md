@@ -1,5 +1,7 @@
 # Useful tips
 
-### Interesting properties I didn't know
+## Interesting CSS properties
 
-[Read text-decoration-skip-ink](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink) in MDN
+- [text-decoration-skip-ink](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink)
+
+- [text-decoration-thickness](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness)
