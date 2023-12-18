@@ -1,6 +1,6 @@
 export {
-  ButtonSimpleFill,
-  ButtonSimpleOutline,
+  FillButton,
+  OutlineButton,
   ButtonFuentFill,
   ButtonFuentOutline,
   ButtonHeroiconFill,

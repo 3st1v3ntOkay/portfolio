@@ -1,0 +1,17 @@
+button {
+  width: fit-content;
+  height: auto;
+  padding: var(--irregular-pad);
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-8, 8px);
+
+  background-color: var(--night, #121417);
+  border: none;
+  border-radius: var(--border-radius, 4px);
+  color: var(--white, #fff);
+
+  font-size: var(--p-sm-size, 0.833rem);
+  cursor: pointer;
+}
