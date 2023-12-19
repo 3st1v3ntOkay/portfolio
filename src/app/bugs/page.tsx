@@ -1,6 +1,7 @@
 import style from './page.module.css';
 import { Footer, Top } from '@/layouts';
 import { HeaderComp } from '@/components';
+import Link from 'next/link';
 
 const Bug = () => {
   return (
@@ -11,6 +12,7 @@ const Bug = () => {
 
       <main className={`${style["main"]} ${style.breakout}`}>
         <HeaderComp>
+          <Link href="/">Home</Link>
           <h1>Bugs page</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.</p>
         </HeaderComp>
