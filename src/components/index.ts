@@ -11,6 +11,7 @@ export {
   IconTitle,
   LinkManager,
   Banner,
+  Row,
 } from './cards';
 
 export { HeaderComp } from'./header';
