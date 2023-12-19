@@ -1,26 +1,32 @@
+/* nextjs */
 import Image from 'next/image';
-import e from './images/e.svg';
-import Link from 'next/link';
+
+/* own */
 import style from './footer.module.css';
+
+/* imagenes */
+import e from '@/assets/emoji/logo/e.svg';
+import icon from '@/assets/emoji/logo/icon.svg';
+import emoji from '@/assets/emoji/face/face-smiling.svg';
 
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <div className={style.space}>
-        <p className={style.author}>@estebanjimenezvaldez</p>
-        <div className={style["content-x"]}>
-          <Image
-            src={e}
-            width={32}
-            height={32}
-            alt="e"
-          />
-          <div className={style["content-y"]}>
-            <p className={style.version}>version 1.0.0</p>
-            <p className={style.url}>me.com</p>
-          </div>
-        </div>
-      </div>
+      <Image
+        src={icon}
+        width={24}
+        height={24}
+        alt="page logo"
+      />
+      <span className={style.layout}>
+        <p>thanks for visit me</p>
+        <Image
+          src={emoji}
+          width={16}
+          height={16}
+          alt="e"
+        />
+      </span>
     </footer>
   )
 }
