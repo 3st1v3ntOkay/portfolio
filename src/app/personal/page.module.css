@@ -45,66 +45,6 @@
   gap: var(--gap-64, 64px);
 }
 
-.h2 {
-  font-size: var(--font-sm-20, 20.25px);
-  font-weight: var(--medium, 500);
-}
-
-.content-main {
-  width: 576px;
-  height: auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-16, 16px);
-}
-
-.content-x-main {
-  display: flex;
-  gap: var(--gap-8, 8px);
-}
-
-.title-main {
-  font-size: var(--font-sm-83, 83.23px);
-  font-weight: var(--bold, 700);
-  text-transform: capitalize;
-}
-
-.technologies {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--gap-16, 16px);
-}
-
-.multiple {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-8, 8px);
-}
-
-.sort {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--gap-32, 32px);
-  margin-top: 32px;
-}
-.sort2 {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--gap-16, 16px);
-}
-
-.p-main {
-  width: auto;
-  height: auto;
-}
-
-.list-card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-16, 16);
-}
-
 @media (width < 768px) {
   .content-main {
     width: calc(576px - 150px);

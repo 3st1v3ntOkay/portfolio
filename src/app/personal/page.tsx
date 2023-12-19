@@ -1,14 +1,11 @@
 import style from './page.module.css'
 import { Footer, Top } from '@/layouts'
 import Link from 'next/link'
-import { Card, Info, Information, Key } from '@/components'
+import { Card, HeaderComp, Information, Key, Row } from '@/components'
 import { github, music, sports, videogames } from '../data/data'
 import Image from 'next/image'
 
 const Projects = () => {
- 
-  
-
   return (
     <div className={style["content-grid"]}>
       <div className={`${style["top"]} ${style.breakout}`}>
@@ -16,69 +13,58 @@ const Projects = () => {
       </div>
 
       <main className={`${style["main"]}`}>
-        <Link href="/">Home</Link>
+        <HeaderComp>
+          <Link href="/">Home</Link>
+          <h1>Bugs page</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.</p>
+        </HeaderComp>
 
-        <div className={style["content-main"]}>
-          <h1 className={style["title-main"]}>About me.</h1>
-          <p className={style["p-main"]}>Well, let&#96;s see my hobbies:</p>
-        </div>
+        <Information gap='wide'>
+          <h2>Games</h2>
 
-        <section className={style.technologies}>
-          <ul className={style.ul}>
-            <li>Programing languages, frameworks, and tools that I used.</li>
-          </ul>
-
-          <div className={style.multiple}>
-            {videogames.map((value, index) => (
-              <Key key={index}>
-                {value}
+          <Row>
+            {videogames.map(({ id, game }) => (
+              <Key key={id}>
+                {game}
               </Key>
             ))}
-          </div>
-        </section>
+          </Row>
+        </Information>
 
-        <section className={style.technologies}>
-          <ul className={style.ul}>
-            <li>Programing languages, frameworks, and tools that I used.</li>
-          </ul>
+        <Information gap='wide'>
+          <h2>Sports</h2>
 
-          <div className={style.multiple}>
-            {sports.map((value, index) => (
-              <Key key={index}>
-                {value}
+          <Row>
+            {sports.map(({ id, game }) => (
+              <Key key={id}>
+                {game}
               </Key>
             ))}
-          </div>
-        </section>
+          </Row>
+        </Information>
 
-        <section className={style.technologies}>
-          <ul className={style.ul}>
-            <li>Programing languages, frameworks, and tools that I used.</li>
-          </ul>
+        <Information gap='wide'>
+          <h2>Music</h2>
 
-          <div className={style.multiple}>
-            <Info>
-              Some data and names of the songs could change because although I have listened and listen to a lot of this music I don&apos;t totally remember all their names and I want to be as precise as possible, so until this message doesn&apos;t disappear, it means that I&apos;m still working on it.
-            </Info>
-
-            <div className={style.sort}>
-              {music.map(({ name, albums }, index) => (
-                <div className={style.sort2} key={index}>
-                  <h2 key={index} className={style.h2}>
+          <Information>
+            <Information gap='wide'>
+              {music.map(({ id, name, albums }) => (
+                <Information key={id}>
+                  <h4>
                     {name}
-                  </h2>
-                  <div className={style.multiple}>
-                    {albums.map((album, indox) => (
-                      <Key key={indox}>
+                  </h4>
+                  <Row>
+                    {albums.map((album) => (
+                      <Key key={id}>
                         {album}
                       </Key>
                     ))}
-                  </div>
-                </div>
+                  </Row>
+                </Information>
               ))}
-            </div>
-          </div>
-        </section>
+            </Information>
+          </Information>
+        </Information>
 
         <Information>
           {github.map(({
