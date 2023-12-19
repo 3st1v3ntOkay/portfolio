@@ -1,7 +1,6 @@
-import React from 'react'
-import style from './page.module.css'
-import { Footer, Top } from '@/layouts'
-import Link from 'next/link'
+import style from './page.module.css';
+import { Footer, Top } from '@/layouts';
+import { HeaderComp } from '@/components';
 
 const Bug = () => {
   return (
@@ -11,8 +10,10 @@ const Bug = () => {
       </div>
 
       <main className={`${style["main"]} ${style.breakout}`}>
-        <h1>Bug page.</h1>
-        <Link href="/">Home</Link>
+        <HeaderComp>
+          <h1>Bugs page</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.</p>
+        </HeaderComp>
       </main>
 
       <div className={`${style["bottom"]} ${style.breakout}`}>
