@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: "Me's Portfolio",
-  description: "A programmer's Portfolio named Esteban Jimenez Valdez, I wish that you have a nice day.",
+  description: "A programmer's Portfolio named Esteban Jimenez Valdez, I wish that you have a nice day."
 }
 
 export default function RootLayout({
@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <body className={`${GeistSans.className} content-grid`}>
+        {children}
+      </body>
     </html>
   )
 }
