@@ -1,14 +1,15 @@
 import React from 'react'
-import { Info, Language, Search } from '@/components'
+import { Info, Search } from '@/components'
 import style from './top.module.css'
 
 const Top = () => {
   return (
     <header>
-      <Info />
+      <Info>
+        This page is still under construction, sorry if you see any visual or functional bug, just press Ctrl B and go report section.
+      </Info>
       <section className={style.menu}>
         <Search />
-        <Language />
       </section>
     </header>
   )
