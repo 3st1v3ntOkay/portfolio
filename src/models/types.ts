@@ -1,4 +1,4 @@
-import type { StaticImageData } from "next/image"
+import type { StaticImageData } from "next/image";
 
 export interface ChildrenProps {
   children: React.ReactNode
@@ -40,4 +40,15 @@ export interface Pages {
   description: string
   url: string
   disabled: boolean
+}
+
+export interface Videogames {
+  id: string
+  game: string
+}
+
+export interface Music {
+  id: string,
+  name: string
+  albums: string[]
 }
