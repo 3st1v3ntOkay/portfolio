@@ -1,6 +1,16 @@
 /* Own */
 import { Links, Tutors, Pages } from "@/models/types";
-import { jack } from '@/assets/png/people';
+import {
+  alan,
+  jack,
+  kevin,
+  lee,
+  midudev,
+  prime,
+  sam,
+  theo,
+  fazt,
+} from '@/assets/jpg';
 import { catFace1 } from '@/assets/emoji/emoji-cat';
 
 /* Libraries */
@@ -15,41 +25,47 @@ export const pages: Pages[] = [
     page: "bugs page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/bugs',
+    disabled: false,
   },
   {
     id: uuidv4(),
     page: "development page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/development',
+    disabled: true,
   },
   {
     id: uuidv4(),
     page: "follow page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/follow',
+    disabled: false,
   },
   {
     id: uuidv4(),
     page: "habbies page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/hobbies',
+    disabled: true,
   },
   {
     id: uuidv4(),
     page: "personal page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/personal',
+    disabled: false,
   },
   {
     id: uuidv4(),
     page: "work page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/work',
+    disabled: true,
   },
 ];
 
-/* change avatars, improve descriptions */
-export const tutors: Tutors[]  = [
+/* improve descriptions */
+export const tutors: Tutors[] = [
   {
     id: uuidv4(),
     avatar: jack,
@@ -62,7 +78,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: alan,
     name: "Gentleman Programming",
     description: "Hola gente!! Cómo andamos? Así que bienvenidos a este canal especial para programadores y gente a la que le gusta el mundo de la programación web! Se suben clases y todo tipo de eventos de manera semanal y se dispone también un canal de discord de la comunidad!",
     links: {
@@ -72,7 +88,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: theo,
     name: "Theo Browne",
     description: "CEO of Ping.gg - t3.gg - Ex-Twitch Engineer - Creator Obsessed - Inventor of the T3 Stack - Building cool stuff :)",
     links: {
@@ -82,7 +98,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: prime,
     name: "ThePrimeTime",
     description: "This is a place for all the things that are awesome on stream.",
     links: {
@@ -92,7 +108,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: kevin,
     name: "Kevin Powell",
     description: "Helping you learn how to make the web, and make it look good while you're at it.",
     links: {
@@ -102,7 +118,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: lee,
     name: "Lee Robinson",
     description: "VP of Product at Vercel",
     links: {
@@ -112,7 +128,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: midudev,
     name: "midudev",
     description: "Streamings sobre Desarrollo FullStack con JavaScript de midudev en Twitch. Directos completos y extracto de los mejores momentos. ",
     links: {
@@ -122,7 +138,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: fazt,
     name: "Fazt",
     description: "FaztCode es un canal de programacion, tutoriales y proyectos web, en donde podras encontrar ejemplos prácticos de lenguajes y tecnologías com Python, Javascript, Go, Rust, Typescript, Django, Nodejs, Flutter, React, React Native, Expressjs, Mongodb, MySQL, PostgreSQL, GraphQL, REST API, y muchas más.",
     links: {
@@ -132,7 +148,7 @@ export const tutors: Tutors[]  = [
   },
   {
     id: uuidv4(),
-    avatar: jack,
+    avatar: sam,
     name: "Sam Selikoff",
     description: "Quality videos on frontend development",
     links: {
@@ -147,28 +163,28 @@ export const github: Links[] = [
   {
     id: uuidv4(),
     image: catFace1,
-    repository: 'daily-problems', 
+    repository: 'daily-problems',
     url: 'https://github.com/3st1v3ntOkay/daily-problems',
     year: 2023,
   },
   {
     id: uuidv4(),
     image: catFace1,
-    repository: 'test-zone-nextjs', 
+    repository: 'test-zone-nextjs',
     url: 'https://github.com/3st1v3ntOkay/test-zone-nextjs',
     year: 2023,
   },
   {
     id: uuidv4(),
     image: catFace1,
-    repository: 'test-zone-astro', 
+    repository: 'test-zone-astro',
     url: 'https://github.com/3st1v3ntOkay/test-zone-astro',
     year: 2023,
   },
   {
     id: uuidv4(),
     image: catFace1,
-    repository: 'javascript-next-level', 
+    repository: 'javascript-next-level',
     url: 'https://github.com/3st1v3ntOkay/javascript-next-level',
     year: 2023,
   },
