@@ -1,5 +1,5 @@
 import style from './css/card.module.css';
-import type { ChildrenProps } from "@/app/models/types";
+import type { ChildrenProps } from "@/models/types";
 
 const IconTitle = ({
   children
