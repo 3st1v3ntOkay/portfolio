@@ -1,0 +1,95 @@
+/* Card */
+.card {
+  width: 576px;
+  height: auto;
+  padding: var(--pad-16, 16px);
+  
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-24, 24px);
+
+  border: 0.6px solid var(--platinum, #CED4DA);
+  border-radius: var(--border-radius, 4px);
+}
+.next {
+  width: 272px;
+  height: 272px;
+  padding: var(--pad-16, 16px);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  background-color: var(--night);
+  border: none;
+  border-radius: var(--border-radius, 4px);
+
+  color: var(--white, #ffffff);
+}
+
+.information-card {
+  display: flex;
+  flex-direction: column;
+}
+.wide {
+  row-gap: var(--gap-16, 16px);
+}
+.normal {
+  row-gap: var(--gap-8, 8px);
+}
+
+.title-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CardPerson */
+.link-manager {
+  display: inline-flex;
+  column-gap: var(--gap-8, 8px);
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: fit-content;
+  height: 80px;
+  
+  border: solid 2px transparent;
+  border-radius: var(--border-radius, 4px);
+}
+
+.cover {
+  width: 1200px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: inherit;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+
+  position: absolute;
+  bottom: -50%;
+  right: 32px;
+  
+  background-color: var(--night);
+  border: var(--avatar-border) ;
+  border-radius: var(--avatar, 100%);
+}
+
+/* Media queries */
+@media (width < 768px) {
+  .card {
+    width: calc(576px - 150px);
+  }
+}
+@media (width < 475px) {
+  .card {
+    width: 100%;
+  }
+}
