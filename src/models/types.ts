@@ -6,6 +6,7 @@ export interface ChildrenProps {
 
 export interface SVGProps {
   color: string
+  disabled: boolean
 }
 
 export interface CardProps {
@@ -38,4 +39,5 @@ export interface Pages {
   page: string
   description: string
   url: string
+  disabled: boolean
 }
