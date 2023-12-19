@@ -1,3 +1,5 @@
-export interface ButtonProps{
-  children: React.ReactNode
+import type { ChildrenProps } from "@/models/types";
+
+export interface ButtonProps extends ChildrenProps {
+  disabled?: boolean
 }
