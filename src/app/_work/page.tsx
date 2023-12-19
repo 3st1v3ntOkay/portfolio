@@ -55,7 +55,7 @@ const Work = () => {
         <Link href="/">Home</Link>
 
         <div className={style["content-main"]}>
-          <h1 className={style["title-main"]}>Work page.</h1>
+          <h1 className={style["title-main"]}>Work.</h1>
           <p className={style["p-main"]}>Here is a brief overview of my technology expertise:</p>
         </div>
 

@@ -62,6 +62,7 @@
 .title-main {
   font-size: var(--font-sm-83, 83.23px);
   font-weight: var(--bold, 700);
+  text-transform: capitalize;
 }
 
 .p-main {
@@ -85,6 +86,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap-16, 16px);
+}
+
+.h2 {
+  font-size: var(--font-sm-20, 20.25px);
+  font-weight: var(--medium, 500);
 }
 
 .ul {

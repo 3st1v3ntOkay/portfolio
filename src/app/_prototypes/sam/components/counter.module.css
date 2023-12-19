@@ -1,0 +1,38 @@
+.counter {
+  /* @tailwindcss: flex space-x-3 overflow-hidden rounded bg-white px-2 leading-none text-gray-900 */
+
+  display: flex;
+  margin-left: 12px;
+
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding-inline: 8px;
+  line-height: 1;
+
+  color: #111827;
+
+  /* height: 24px;
+  box-shadow: var(--tw-ring-inset, red) 0 0 0 calc(2px + var(--tw-ring-offset-width, green)) var(--tw-ring-color, blue);
+  position: relative;
+  width: 24px; */
+}
+
+.number {
+  /* @tailwindcss: absolute inset-0 flex items-center justify-center */
+
+  position: absolute;
+  inset: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit {
+  /* @tailwindcss: relative w-[1ch] tabular-nums */
+
+  position: relative;
+  width: 1ch;
+  font-variant-numeric: tabular-nums;
+}

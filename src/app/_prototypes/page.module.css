@@ -1,0 +1,138 @@
+.content-grid {
+  --padding-inline: 1rem;
+  --content-max-width: 900px;
+  --breakout-max-width: 1200px;
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
+  display: grid;
+  grid-template-columns:
+  [full-width-start] minmax(var(--padding-inline), 1fr)
+    [breakout-start] minmax(0, var(--breakout-size))
+      [content-start] min(
+        100% - (var(--padding-inline) * 2),
+        var(--content-max-width)
+      )
+      [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+  minmax(var(--padding-inline), 1fr) [full-width-end];
+
+  justify-items: center;
+  row-gap: var(--gap-32, 32px);
+}
+
+.content-grid > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-64, 64px);
+}
+
+.h2 {
+  font-size: var(--font-sm-20, 20.25px);
+  font-weight: var(--medium, 500);
+}
+
+.content-main {
+  width: 576px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-16, 16px);
+}
+
+.content-x-main {
+  display: flex;
+  gap: var(--gap-8, 8px);
+}
+
+.title-main {
+  font-size: var(--font-sm-83, 83.23px);
+  font-weight: var(--bold, 700);
+  text-transform: capitalize;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-16, 16px);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-8, 8px);
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-32, 32px);
+  margin-top: 32px;
+}
+.sort2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-16, 16px);
+}
+
+.p-main {
+  width: auto;
+  height: auto;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-16, 16);
+}
+
+@media (width < 768px) {
+  .content-main {
+    width: calc(576px - 150px);
+  }
+
+  .title-main {
+    font-size: var(--font-sm-46, 46.18px);
+  }
+}
+
+@media (width < 475px) {
+  .content-main {
+    width: 100%;
+  }
+  
+  .title-main {
+    font-size: var(--font-sm-28, 28.83px);
+  }
+}
+
+@media (width < 475px) {
+  .top {
+    width: 100%;
+  }
+}
+
+@media (width < 475px) {
+  .bottom {
+    width: 100%;
+  }
+}
