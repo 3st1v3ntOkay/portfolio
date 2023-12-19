@@ -82,6 +82,12 @@
   border-radius: var(--avatar, 100%);
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-8, 8px);
+}
+
 /* Media queries */
 @media (width < 768px) {
   .card {
