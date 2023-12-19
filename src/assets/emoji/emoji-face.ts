@@ -1,9 +1,10 @@
-import faceAffection from './face/face-affection.svg'
-import faceGlasses from './face/face-glasses.svg'
-import faceSmilling2 from './face/face-smiling-2.svg'
-import faceTongue from './face/face-tongue.svg'
-import faceUnwell from './face/face-unwell.svg'
-import faceUnwell5 from './face/face-unwell-5.svg'
+import faceAffection from './face/face-affection.svg';
+import faceGlasses from './face/face-glasses.svg';
+import faceSmilling2 from './face/face-smiling-2.svg';
+import faceTongue from './face/face-tongue.svg';
+import faceUnwell from './face/face-unwell.svg';
+import faceUnwell5 from './face/face-unwell-5.svg';
+import faceSmilling from './face/face-smiling.svg';
 
 export {
   faceAffection,
@@ -12,4 +13,5 @@ export {
   faceTongue,
   faceUnwell,
   faceUnwell5,
+  faceSmilling,
 }
