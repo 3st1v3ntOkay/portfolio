@@ -16,12 +16,18 @@
   --veronica: #9747FF;
   --grape: #6c2cc0;
   --mauve: #D4B2FF;
+  --tekhelet: #551a8b;
   --celestial-blue: #0597ea;
+
+  --info-color: rgba(222, 226, 230, 0.05) ;
 
   /* border */
   --border-radius: 4px;
   --border-platinum: 0.6px solid var(--platinum, #DEE2E6);
   --border-veronica: 0.6px solid var(--veronica, #9747ff);
+  --border-french-gray: 0.6px solid var(--default-french-gray, #CED4DA);
+  --avatar: 100%;
+  --avatar-border: 4px solid var(--white, #ffffff);
 
   /* font stack */
   --font-stack: inherit, -apple-system, BlinkMacSystemFont, "Seoe UI", Roboto, sans-serif;
@@ -37,6 +43,8 @@
   --p-size: 1rem;
   --p-sm-size: 0.833rem;
   --p-xsm-size: 0.694rem;
+
+  --big-h: 5rem;
 
   /* font weight */
   --thin: 100;
@@ -56,6 +64,8 @@
   --pad-24: 24px;
   --pad-32: 32px;
   --pad-64: 64px;
+
+  --irregular-pad: 4px 8px;
 
   /* gap for grid and flex */
   --gap-8: 8px;
@@ -81,6 +91,10 @@ body {
   font-family: var(--font-stack);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+
+  /* extras */
+  margin-block: 16px;
+  scroll-behavior: smooth;
 }
 
 img, picture, video, canvas, svg {
@@ -96,30 +110,53 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  font-weight: var(--medium, 500);
+  text-decoration-thickness: 2px;
+}
+
+a:is(:link, :visited) {
+  color: var(--veronica, #9747FF);
+}
+a:hover {
+  color: var(--tekhelet, #551a8b);
+}
+a:active {
+  color: var(--celestial-blue, #0597ea);
+}
+
 #root, #__next {
   isolation: isolate;
 }
 
 /* check its accessibility */
 ::selection {
-  color: var(--veronica);
+  /* background-color: var(--veronica);
+  color: var(--mauve); */
 }
 
+:disabled {
+  background-color: var(--anti-flash-white, #E9ECEF);
+  color: var(--slate-gray, #6C757D);
+  cursor: not-allowed;
+}
+
+/* make a custom scroll */
+
 @media (prefers-color-scheme: light) {
-  html,
   body {
     /* find 2 colors together made a good background with color-mix() */
     background-color: var(--seasalt);
-    color: var(--night, #121417);
-
-    font-size: 16px;
-    margin-block: 16px;
-    font-size: var(--font-ms-16, 16px);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   /* config a dark mode */
+  body {
+    /* find 2 colors together made a good background with color-mix() */
+    background-color: var(--night);
+    color: var(--seasalt);
+  }
 }
 
 /* grid layout */
