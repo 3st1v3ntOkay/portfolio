@@ -1,22 +1,24 @@
 import './default.css';
 import style from './button.module.css';
-import type { ChildrenProps } from '@/models/types';
+import type { ButtonProps } from './models/types';
 
 const FillButton = ({
   children,
-}: ChildrenProps) => {
+  disabled,
+}: ButtonProps) => {
   return (
-    <button type='button'>
+    <button type='button' disabled={disabled}>
       {children}
     </button>
   )
 }
 
 const OutlineButton = ({
-  children
-}: ChildrenProps) => {
+  children,
+  disabled,
+}: ButtonProps) => {
   return (
-    <button type='button' className={style.outline}>
+    <button type='button' className={style.outline} disabled={disabled}>
       {children}
     </button>
   )
