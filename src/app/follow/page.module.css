@@ -1,3 +1,19 @@
+.outline {
+  width: fit-content;
+  height: auto;
+  padding: var(--irregular-pad);
+
+  display: inline-flex;
+  align-items: center;
+  column-gap: var(--gap-8, 8px);
+
+  font-size: var(--p-sm-size, 0.833rem);
+  font-weight: var(--regular, 400);
+  
+  border: 0.6px solid var(--default-french-gray, #CED4DA);
+  border-radius: var(--border-radius, 4px);
+}
+
 .content-grid {
   --padding-inline: 1rem;
   --content-max-width: 900px;
@@ -62,6 +78,11 @@
 .title-main {
   font-size: var(--font-sm-83, 83.23px);
   font-weight: var(--bold, 700);
+}
+
+.h2 {
+  font-size: var(--font-sm-20, 20.25px);
+  font-weight: var(--medium, 500);
 }
 
 .p-main {
