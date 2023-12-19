@@ -37,3 +37,6 @@ next-env.d.ts
 
 # script under testing
 /utils
+
+# README.md
+/src/**/README.md
