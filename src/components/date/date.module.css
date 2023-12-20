@@ -1,0 +1,4 @@
+.date {
+  font-weight: var(--medium, 500);
+  color: var(--veronica);
+}

@@ -1,0 +1,1 @@
+export { DateComp } from './date';
