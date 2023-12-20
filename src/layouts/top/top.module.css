@@ -1,12 +1,8 @@
 .menu {
-  max-width: 576px;
   height: auto;
   
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   margin-top: var(--gap-32, 32px);
 }

@@ -1,6 +1,5 @@
 /* Card */
 .card {
-  width: 576px;
   height: auto;
   padding: var(--pad-16, 16px);
   

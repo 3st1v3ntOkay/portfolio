@@ -1,9 +1,10 @@
 .search-content {
+  grid-column: span 1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  width: 272px;
+  
   height: auto;
   padding: var(--pad-4, 4px);
   border-radius: var(--border-radius, 4px);
