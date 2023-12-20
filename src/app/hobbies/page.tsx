@@ -15,7 +15,7 @@ const Projects = () => {
       <main className={`${style["main"]}`}>
         <HeaderComp>
           <Link href="/">Home</Link>
-          <h1>Bugs page</h1>
+          <h1>Hobbies page</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.</p>
         </HeaderComp>
 
