@@ -1,5 +1,5 @@
 /* Own */
-import { Links, Tutors, Pages, Videogames, Music, Technologies, Tools } from "@/models/types";
+import { Links, Tutors, Pages, Videogames, Music, Technologies, Tools, Articles, Preview } from "@/models/types";
 import {
   alan,
   jack,
@@ -11,13 +11,17 @@ import {
   theo,
   fazt,
 } from '@/assets/jpg';
-import { catFace1 } from '@/assets/emoji/emoji-cat';
+import { catFace1, catFace3 } from '@/assets/emoji/emoji-cat';
+import icon from '@/assets/emoji/logo/icon.svg';
 
 /* Libraries */
 import { v4 as uuidv4 } from 'uuid';
+import { lemonRetro, waveRetro } from "@/assets/png";
+import { avatarMe, ikeaRetro } from "@/assets/avatar";
 
 // Ver si puedo hacer un algoritmo junto a nodejs que me actualice mis datos que uso para la pagina, useando una funcion
 
+/* delete disabled property */
 export const pages: Pages[] = [
   {
     id: uuidv4(),
@@ -28,10 +32,10 @@ export const pages: Pages[] = [
   },
   {
     id: uuidv4(),
-    page: "development page",
+    page: "blog page",
     description: "Here you can find the programming languages and technologies I use for website development.",
-    url: '/development',
-    disabled: true,
+    url: '/blog',
+    disabled: false,
   },
   {
     id: uuidv4(),
@@ -42,10 +46,10 @@ export const pages: Pages[] = [
   },
   {
     id: uuidv4(),
-    page: "habbies page",
+    page: "hobbies page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/hobbies',
-    disabled: true,
+    disabled: false,
   },
   {
     id: uuidv4(),
@@ -59,7 +63,7 @@ export const pages: Pages[] = [
     page: "work page",
     description: "Here you can find the programming languages and technologies I use for website development.",
     url: '/work',
-    disabled: true,
+    disabled: false,
   },
 ];
 
@@ -611,4 +615,63 @@ export const tools: Tools[] = [
     alt: 'tsdocs.dev logo',
     url: 'https://tsdocs.dev/'
   },
+];
+
+export const preview: Preview[] = [
+  {
+    id: uuidv4(),
+    title: 'my proccess through my page design',
+    icon: catFace1,
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.',
+    url: '/blog/portfolio-design',
+  },
+  {
+    id: uuidv4(),
+    title: 'my proccess through my page development',
+    icon: catFace3,
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.',
+    url: '/blog/portfolio-development',
+  },
+];
+
+export const articles: Articles[] = [
+  {
+    id: 'portfolio-design',
+    title: 'my proccess through my page design',
+    author: 'Esteban Jimenez Valdez',
+    avatar: icon,
+    date: new Date("2023-12-20T01:11:15"),
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.',
+    images: [
+      {
+        id: uuidv4(),
+        image: lemonRetro,
+        width: 1200,
+        height: 1779,
+        alt: 'abstract retro image',
+      },
+    ],
+  },
+  {
+    id: 'portfolio-development',
+    title: 'my proccess through my page development',
+    author: 'Esteban Jimenez Valdez',
+    avatar: icon,
+    date: new Date("2023-12-20T01:11:32"),
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.',
+    images: [
+      {
+        id: uuidv4(),
+        image: waveRetro,
+        width: 1200,
+        height: 1779,
+        alt: 'abstract retro image',
+      },
+    ],
+  },
+];
+
+export const articlePage = [
+  { article: 'portfolio-design' },
+  { article: 'portfolio-development' }
 ];
