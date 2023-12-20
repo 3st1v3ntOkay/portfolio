@@ -48,7 +48,18 @@ export interface Videogames {
 }
 
 export interface Music {
-  id: string,
+  id: string
   name: string
   albums: string[]
+}
+
+export interface Technologies {
+  id: string
+  name: string
+  image: StaticImageData
+  alt: string
+}
+
+export interface Tools extends Technologies {
+  url: string 
 }
