@@ -1,6 +1,9 @@
 .key {
   background-color: var(--white, #ffffff);
 
+  display: inline-flex;
+  column-gap: var(--gap-8, 8px);
+
   width: fit-content;
   height: auto;
   padding: var(--irregular-pad);
