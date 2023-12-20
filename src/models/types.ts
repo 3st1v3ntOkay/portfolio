@@ -63,3 +63,42 @@ export interface Technologies {
 export interface Tools extends Technologies {
   url: string 
 }
+
+export interface Preview {
+  id: string
+  title: string
+  icon: StaticImageData
+  description: string
+  url: string
+}
+
+interface Images {
+  id: string
+  image: StaticImageData
+  width: number
+  height: number
+  alt: string
+}
+
+export interface Articles {
+  id: string
+  title: string
+  author: string
+  avatar: StaticImageData
+  date: Date
+  description: string
+  images: Array<Images>
+}
+
+export interface StaticPageParams {
+  params: {
+    article: string
+  }
+}
+
+export interface DateProps extends ChildrenProps {
+  date: string
+}
+export interface RowProps extends ChildrenProps {
+  type?: 'normal' | 'space'
+}
