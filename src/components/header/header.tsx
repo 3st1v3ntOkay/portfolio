@@ -6,9 +6,9 @@ const HeaderComp = ({
   children
 }: ChildrenProps) => {
   return (
-    <div className='bg'>
+    <header>
       {children}
-    </div>
+    </header>
   )
 }
 
