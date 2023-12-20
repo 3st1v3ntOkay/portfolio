@@ -1,10 +1,10 @@
-/* Done */
 export { Language } from './language/';
 export { Search } from './search/';
 export { Info } from './info';
 export { Key } from './keys';
+export { HeaderComp } from'./header';
+export { DateComp } from './date'
 
-/* Working ... */
 export {
   Card,
   Information,
@@ -14,9 +14,7 @@ export {
   Row,
 } from './cards';
 
-export { HeaderComp } from'./header';
 
-/* Done */
 export {
   FillButton,
   OutlineButton,
