@@ -8,6 +8,10 @@ import sam from './sam-selikoff.jpg';
 import theo from './theo-browne.jpg';
 import fazt from './fazt.jpg';
 
+import anime from './anime.jpg';
+import fishEye from './fish-eye.jpg';
+import minimalist from './minimalist.jpg';
+
 export {
   alan,
   jack,
@@ -18,4 +22,7 @@ export {
   sam,
   theo,
   fazt,
+  anime,
+  fishEye,
+  minimalist,
 }
