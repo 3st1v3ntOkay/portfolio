@@ -36,8 +36,8 @@ yarn-error.log*
 next-env.d.ts
 
 # script under testing
-/utils/*.js
-/utils/*.mjs
+/src/utils/**/*.js
+/src/utils/**/*.mjs
 
 # README.md
 /src/**/README.md
