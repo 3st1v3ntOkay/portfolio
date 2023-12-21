@@ -1,7 +1,9 @@
 import style from './page.module.css';
+
+import Link from 'next/link';
+
 import { Footer, Top } from '@/layouts';
 import { HeaderComp } from '@/components';
-import Link from 'next/link';
 
 const Bug = () => {
   return (

@@ -1,8 +1,10 @@
-import { DateComp, HeaderComp, Row } from "@/components";
-import Link from "next/link";
 import style from './page.module.css';
-import { articlePage, articles } from '@/app/data';
+
+import Link from "next/link";
 import Image from "next/image";
+import { articlePage, articles } from '@/app/data';
+
+import { DateComp, HeaderComp, Row } from "@/components";
 import { dateFormater } from "@/utils/time";
 import { StaticPageParams } from "@/models/types";
 

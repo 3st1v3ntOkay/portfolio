@@ -1,19 +1,15 @@
-/* Own */
-import { Footer, Top } from '@/layouts'
-import style from './page.module.css'
 import './globals.css';
-import { Card, FillButton, IconTitle, Information, HeaderComp } from '@/components'
+import style from './page.module.css';
 
-/* Nextjs */
 import Image from 'next/image';
 import Link from 'next/link';
+import { pages } from './data';
 
-/* Imagenes */
+import { Card, FillButton, IconTitle, Information, HeaderComp } from '@/components';
+import { Footer, Top } from '@/layouts';
+
 import { catFace1 } from '@/assets/emoji';
 import { Arrow } from './svg';
-
-/* Data */
-import { pages } from './data';
 
 export default function Home() {
   return (
@@ -29,38 +25,36 @@ export default function Home() {
         </HeaderComp>
 
         <Information gap='wide'>
-          {/* <div className={style.wider}> */}
-            {pages.map(({
-              id,
-              page,
-              description,
-              url,
-              disabled,
-            }) => (
-              <Card outline key={id}>
-                <Information gap='normal'>
-                  <IconTitle>
-                    <h4>{page}</h4>
-                    <Image
-                      src={catFace1}
-                      width={32}
-                      height={32}
-                      alt="cat smilling"
-                    />
-                  </IconTitle>
+          {pages.map(({
+            id,
+            page,
+            description,
+            url,
+            disabled,
+          }) => (
+            <Card outline key={id}>
+              <Information gap='normal'>
+                <IconTitle>
+                  <h4>{page}</h4>
+                  <Image
+                    src={catFace1}
+                    width={32}
+                    height={32}
+                    alt="cat smilling"
+                  />
+                </IconTitle>
 
-                  <p>{description}</p>
-                </Information>
+                <p>{description}</p>
+              </Information>
 
-                <Link href={url}>
-                  <FillButton disabled={disabled}>
-                    check
-                    <Arrow color='light' disabled={disabled} />
-                  </FillButton>
-                </Link>
-              </Card>
-            ))}
-          {/* </div> */}
+              <Link href={url}>
+                <FillButton disabled={disabled}>
+                  check
+                  <Arrow color='light' disabled={disabled} />
+                </FillButton>
+              </Link>
+            </Card>
+          ))}
         </Information>
       </main>
 

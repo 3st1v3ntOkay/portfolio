@@ -3,14 +3,14 @@
 import React from 'react'
 import { Counter } from './components';
 import { useState } from 'react';
-import { SimpleLink } from '@/components';
+import Link from 'next/link';
 
 const TwitchCounter = () => {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <SimpleLink link="./">Back</SimpleLink>
+      <Link href="./">Back</Link>
 
       <p>Choose a number:</p>
       <input

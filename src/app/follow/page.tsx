@@ -1,13 +1,11 @@
-/* Nextjs */
-import Link from 'next/link';
+import style from './page.module.css';
 
-/* Own */
-import style from './page.module.css'
-import { Footer, Top } from '@/layouts'
+import Link from 'next/link';
 import { tutors } from '../data';
+
+import { Footer, Top } from '@/layouts';
 import { Banner, Card, HeaderComp, Information, LinkManager } from '@/components';
 
-/* Imagenes */
 import { lemonRetro } from '@/assets/png/';
 import { Arrow } from '../svg';
 

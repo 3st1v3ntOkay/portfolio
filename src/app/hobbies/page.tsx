@@ -1,8 +1,10 @@
-import style from './page.module.css'
-import { Footer, Top } from '@/layouts'
-import Link from 'next/link'
-import { HeaderComp, Information, Key, Row } from '@/components'
-import { music, sports, videogames } from '../data'
+import style from './page.module.css';
+
+import Link from 'next/link';
+import { music, sports, videogames } from '../data';
+
+import { Footer, Top } from '@/layouts';
+import { HeaderComp, Information, Key, Row } from '@/components';
 
 const Projects = () => {
   return (

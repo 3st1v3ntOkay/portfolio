@@ -1,11 +1,13 @@
-import React from 'react'
-import style from './page.module.css'
-import { Footer, Top } from '@/layouts'
-import Link from 'next/link'
-import { Card, FillButton, HeaderComp, IconTitle, Information } from '@/components'
-import { preview } from '../data'
-import Image from 'next/image'
-import { Arrow } from '../svg'
+import style from './page.module.css';
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { preview } from '../data';
+
+import { Footer, Top } from '@/layouts';
+import { Card, FillButton, HeaderComp, IconTitle, Information } from '@/components';
+
+import { Arrow } from '../svg';
 
 const Blog = () => {
   return (

@@ -1,17 +1,11 @@
-import React from 'react'
-import style from './page.module.css'
-import { Footer, Top } from '@/layouts'
-import Link from 'next/link'
-import Image from 'next/image'
-import { HeaderComp, Information, Row, Key } from '@/components'
-import { future, old, stack } from '../data'
+import style from './page.module.css';
 
-interface CurrentProps {
-  id: number | string
-  name: string
-  image: string
-  alt: string
-}
+import Link from 'next/link';
+import Image from 'next/image';
+import { future, old, stack } from '../data';
+
+import { HeaderComp, Information, Row, Key } from '@/components';
+import { Footer, Top } from '@/layouts';
 
 const Work = () => {
   return (
