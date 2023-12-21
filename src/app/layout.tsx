@@ -4,7 +4,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: "Me's Portfolio",
-  description: "A programmer's Portfolio named Esteban Jimenez Valdez, I wish that you have a nice day."
+  description: "A programmer's Portfolio named Esteban Jimenez Valdez",
+  // manifest: "/manifest.webmanifest",
 }
 
 export default function RootLayout({
