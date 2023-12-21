@@ -5,12 +5,12 @@
     {
       "src": "/192x192.png",
       "type": "image/png",
-      "sizes": "232x232"
+      "sizes": "192x192"
     },
     {
       "src": "/512x512.png",
       "type": "image/png",
-      "sizes": "602x602"
+      "sizes": "512x512"
     }
   ],
   "display": "standalone",
