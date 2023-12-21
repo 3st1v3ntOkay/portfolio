@@ -1,0 +1,36 @@
+{
+  "short_name": "Me's Portfolio",
+  "name": "Me's Portfolio",
+  "icons": [
+    {
+      "src": "/192x192.png",
+      "type": "image/png",
+      "sizes": "232x232"
+    },
+    {
+      "src": "/512x512.png",
+      "type": "image/png",
+      "sizes": "602x602"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#121417",
+  "scope": "/",
+  "start_url": "/?source=pwa",
+  "description": "A programmer's Portfolio named Esteban Jimenez Valdez",
+  "screenshots": [
+    {
+      "src": "/cover.png",
+      "type": "image/png",
+      "sizes": "1980x1080",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/cover.png",
+      "type": "image/png",
+      "sizes": "1980x1080",
+      "form_factor": "wide"
+    }
+  ]
+}
