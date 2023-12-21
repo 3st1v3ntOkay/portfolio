@@ -3,7 +3,7 @@
 export { articlePage, articles, preview } from './blog';
 export { github } from './github';
 export { music } from './music';
-export { pages } from './page';
+export { pages } from './routes';
 export { stack, old, future, tools } from './qualifications';
 export { sports } from './sports';
 export { tutors } from './tutors';
