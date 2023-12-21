@@ -1,7 +1,7 @@
 import { DateComp, HeaderComp, Row } from "@/components";
 import Link from "next/link";
-import style from './page.modules.css';
-import { articlePage, articles } from '@/app/data/data';
+import style from './page.module.css';
+import { articlePage, articles } from '@/app/data';
 import Image from "next/image";
 import { dateFormater } from "@/utils/time";
 import { StaticPageParams } from "@/models/types";

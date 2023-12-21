@@ -4,7 +4,7 @@ import Link from 'next/link';
 /* Own */
 import style from './page.module.css'
 import { Footer, Top } from '@/layouts'
-import { tutors } from '../data/data';
+import { tutors } from '../data';
 import { Banner, Card, HeaderComp, Information, LinkManager } from '@/components';
 
 /* Imagenes */

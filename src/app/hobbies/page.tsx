@@ -1,9 +1,8 @@
 import style from './page.module.css'
 import { Footer, Top } from '@/layouts'
 import Link from 'next/link'
-import { Card, HeaderComp, Information, Key, Row } from '@/components'
-import { github, music, sports, videogames } from '../data/data'
-import Image from 'next/image'
+import { HeaderComp, Information, Key, Row } from '@/components'
+import { music, sports, videogames } from '../data'
 
 const Projects = () => {
   return (

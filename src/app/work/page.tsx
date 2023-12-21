@@ -4,7 +4,7 @@ import { Footer, Top } from '@/layouts'
 import Link from 'next/link'
 import Image from 'next/image'
 import { HeaderComp, Information, Row, Key } from '@/components'
-import { future, old, stack } from '../data/data'
+import { future, old, stack } from '../data'
 
 interface CurrentProps {
   id: number | string

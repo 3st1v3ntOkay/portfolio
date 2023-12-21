@@ -3,7 +3,7 @@ import style from './page.module.css'
 import { Footer, Top } from '@/layouts'
 import Link from 'next/link'
 import { Card, FillButton, HeaderComp, IconTitle, Information } from '@/components'
-import { preview } from '../data/data'
+import { preview } from '../data'
 import Image from 'next/image'
 import { Arrow } from '../svg'
 

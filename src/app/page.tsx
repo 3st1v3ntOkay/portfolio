@@ -9,11 +9,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 /* Imagenes */
-import { catFace1 } from '@/assets/emoji/emoji-cat';
+import { catFace1 } from '@/assets/emoji';
 import { Arrow } from './svg';
 
 /* Data */
-import { pages } from './data/data';
+import { pages } from './data';
 
 export default function Home() {
   return (
