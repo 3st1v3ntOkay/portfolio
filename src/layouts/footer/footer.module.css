@@ -1,6 +1,10 @@
 .footer {
-  /* width: 576px; */
-  height: 76px;
+  grid-column: span 2;
+  grid-row: 3;
+
+  /* width: fit-content; */
+  /* height: 76px; */
+  height: auto;
   padding: var(--pad-16, 16px);
   
   display: flex;

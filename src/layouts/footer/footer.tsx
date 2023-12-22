@@ -1,13 +1,9 @@
-/* nextjs */
-import Image from 'next/image';
-
-/* own */
 import style from './footer.module.css';
 
-/* imagenes */
-import e from '@/assets/emoji/logo/e.svg';
-import icon from '@/assets/emoji/logo/icon.svg';
-import emoji from '@/assets/emoji/face/face-smiling.svg';
+import Image from 'next/image';
+
+import { icon } from '@/assets/emoji/logo';
+import { faceSmilling } from '@/assets/emoji/face';
 
 const Footer = () => {
   return (
@@ -21,7 +17,7 @@ const Footer = () => {
       <span className={style.layout}>
         <p>thanks for visit me</p>
         <Image
-          src={emoji}
+          src={faceSmilling}
           width={16}
           height={16}
           alt="e"
