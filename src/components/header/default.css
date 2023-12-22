@@ -1,0 +1,12 @@
+h1 {
+  font-size: var(--big-h, 5rem);
+  font-weight: var(--semibold, 600);
+
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+p {
+  grid-column: span 2;
+  grid-row: 2;
+}

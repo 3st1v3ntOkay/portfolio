@@ -1,12 +1,12 @@
-import './header.css';
-import style from '@/app/page.module.css';
+import './default.css';
+import style from './header.module.css';
 import type { ChildrenProps } from "@/models/types";
 
 const HeaderComp = ({
   children
 }: ChildrenProps) => {
   return (
-    <header>
+    <header className={style.header}>
       {children}
     </header>
   )
