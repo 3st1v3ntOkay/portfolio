@@ -40,6 +40,8 @@ export interface Pages {
   description: string
   url: string
   disabled: boolean
+  icon: StaticImageData
+  alt: string
 }
 
 export interface Videogames {
