@@ -1,5 +1,5 @@
 :root {
-  /* colors */
+  /* color */
   --seaslat: #F8F9FA;
   --anti-flash-white: #E9ECEF;
   --platinum: #DEE2E6;
@@ -19,13 +19,11 @@
   --tekhelet: #551a8b;
   --celestial-blue: #0597ea;
 
-  --info-color: rgba(222, 226, 230, 0.05) ;
-
   /* border */
   --border-radius: 4px;
-  --border-platinum: 0.6px solid var(--platinum, #DEE2E6);
-  --border-veronica: 0.6px solid var(--veronica, #9747ff);
-  --border-french-gray: 0.6px solid var(--default-french-gray, #CED4DA);
+  --border-platinum: 2px solid var(--platinum, #DEE2E6);
+  --border-veronica: 2px solid var(--veronica, #9747ff);
+  --border-french-gray: 2px solid var(--default-french-gray, #CED4DA);
   --avatar: 100%;
   --avatar-border: 4px solid var(--white, #ffffff);
 
@@ -33,7 +31,7 @@
   --font-stack: inherit, -apple-system, BlinkMacSystemFont, "Seoe UI", Roboto, sans-serif;
   --simple-font-stack: inherit, system-ui, sans-serif;
   
-  /* font size scaled in minor third */
+  /* font size in minor third */
   --h1-size: 2.986rem;
   --h2-size: 2.488rem;
   --h3-size: 2.074rem;
@@ -67,7 +65,7 @@
 
   --irregular-pad: 4px 8px;
 
-  /* gap for grid and flex */
+  /* gap */
   --gap-8: 8px;
   --gap-16: 16px;
   --gap-24: 24px;
@@ -85,15 +83,13 @@
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   background-color: var(--white, #ffffff);
-  color: var(--night, #121417);
   
   font-family: var(--font-stack);
-  -webkit-font-smoothing: antialiased;
+  color: var(--night, #121417);
   line-height: 1.5;
 
-  /* extras */
-  margin-block: 16px;
   scroll-behavior: smooth;
 }
 
@@ -129,33 +125,22 @@ a:active {
   isolation: isolate;
 }
 
-/* check its accessibility */
-::selection {
-  /* background-color: var(--veronica);
-  color: var(--mauve); */
-}
-
 :disabled {
   background-color: var(--anti-flash-white, #E9ECEF);
   color: var(--slate-gray, #6C757D);
   cursor: not-allowed;
 }
 
-/* make a custom scroll */
-
 @media (prefers-color-scheme: light) {
   body {
-    /* find 2 colors together made a good background with color-mix() */
     background-color: var(--seasalt);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  /* config a dark mode */
   body {
-    /* find 2 colors together made a good background with color-mix() */
-    background-color: var(--night);
-    color: var(--seasalt);
+    /* background-color: var(--night);
+    color: var(--seasalt); */
   }
 }
 
