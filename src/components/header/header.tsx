@@ -6,7 +6,7 @@ const HeaderComp = ({
   children
 }: ChildrenProps) => {
   return (
-    <header className={style.header}>
+    <header className={`${style.header} only`}>
       {children}
     </header>
   )
