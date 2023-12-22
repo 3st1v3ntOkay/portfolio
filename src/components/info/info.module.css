@@ -1,30 +1,15 @@
-.info { 
+.info {
+  grid-column: span 3;
+  grid-row: 1;
+
   height: auto;
   padding: var(--pad-16, 16px);
   
-  background-color: rgba(151, 71, 255, 0.05);
+  background-color: var(--magnolia);
   border-radius: var(--border-radius);
   border: var(--border-veronica);
-
-  /* border-image-source: url("./images/border-60.svg");
-  border-image-repeat: space round;
-  border-image-slice: 1;
-  border-image-width: 1px 1px; */
 
   font-size: var(--p-sm-size, 0.833rem);
   font-weight: var(--medium, 500);
   color: var(--veronica, #9747ff);
-}
-
-/* ver que tan necesarios son */
-@media (width < 768px) {
-  .info {
-    width: calc(576px - 150px);
-  }
-}
-
-@media (width < 475px) {
-  .info {
-    width: 100%;
-  }
 }
