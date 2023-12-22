@@ -5,20 +5,18 @@ import Image from 'next/image';
 import { future, old, stack } from '../data';
 
 import { HeaderComp, Information, Row, Key } from '@/components';
-import { Footer, Top } from '@/layouts';
+import { Footer, Main, Top } from '@/layouts';
 
 const Work = () => {
   return (
-    <div className={style["content-grid"]}>
-      <div className={`${style["top"]} ${style.breakout}`}>
-        <Top />
-      </div>
+    <div className={style.flow}>
+      <Top />
 
-      <main className={`${style["main"]} ${style.breakout}`}>
+      <Main>
         <HeaderComp>
           <Link href="/">Home</Link>
-          <h1 className={style["title-main"]}>Work.</h1>
-          <p className={style["p-main"]}>Here is a brief overview of my technology expertise:</p>
+          <h1>Work.</h1>
+          <p>Here is a brief overview of my technology expertise:</p>
         </HeaderComp>
 
         <Information gap='wide'>
@@ -74,11 +72,9 @@ const Work = () => {
             ))}
           </Row>
         </Information>
-      </main>
+      </Main>
 
-      <div className={`${style["bottom"]} ${style.breakout}`}>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }

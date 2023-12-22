@@ -7,6 +7,7 @@ import { articlePage, articles } from '@/app/data';
 import { DateComp, HeaderComp, Row } from "@/components";
 import { dateFormater } from "@/utils/time";
 import { StaticPageParams } from "@/models/types";
+import { Footer, Main, Top } from '@/layouts';
 
 export const dynamicParams = false;
 
@@ -19,10 +20,12 @@ export default function Page({ params }: StaticPageParams) {
   const data = articles.find(({ id, ..._ }) => id === article);
 
   return (
-    <div className={style["content-grid"]}>
-      <main className={`${style["main"]} ${style.breakout}`}>
+    <div className={style.flow}>
+      {/* <Top /> */}
+
+      <Main>
         {data ? (
-          <div>
+          <>
             <HeaderComp>
               <Link href="/blog">Back</Link>
               <h2>{data.title}</h2>
@@ -59,13 +62,15 @@ export default function Page({ params }: StaticPageParams) {
                 alt={alt}
               />
             ))}
-          </div>
+          </>
         ) : (
           <div>
             <p>info dead</p>
           </div>
         )}
-      </main>
+      </Main>
+
+      {/* <Footer /> */}
     </div>
   )
 }

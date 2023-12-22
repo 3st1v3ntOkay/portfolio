@@ -1,32 +1,14 @@
 .flow {
-  /* background-color: blue; */
+  --padding-inline: 1rem;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:
+    minmax(var(--padding-inline), var(--gap-32, 32px))
+    3fr
+    minmax(var(--padding-inline), var(--gap-32, 32px));
   grid-template-rows: auto;
 
   row-gap: var(--gap-32, 32px);
-}
-
-.top {
-  /* background-color: green; */
-  grid-column: span 2;
-  grid-row: 1 ;
-}
-
-.mid {
-  /* background-color: red; */
-  grid-column: span 2;
-  grid-row: 2;
-
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--gap-16, 16px);
-}
-
-.bottom {
-  /* background-color: yellow; */
-  grid-column: span 2;
-  grid-row: 3;
 }
 
 /* Link with outline style */

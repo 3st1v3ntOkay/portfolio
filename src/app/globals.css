@@ -18,6 +18,7 @@
   --mauve: #D4B2FF;
   --tekhelet: #551a8b;
   --celestial-blue: #0597ea;
+  --magnolia: #9747ff0d;
 
   /* border */
   --border-radius: 4px;
@@ -65,6 +66,14 @@
 
   --irregular-pad: 4px 8px;
 
+  /* grid */
+  --padding-inline: 1rem;
+  --content-max-width: 900px;
+  --breakout-max-width: 1200px;
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
   /* gap */
   --gap-8: 8px;
   --gap-16: 16px;
@@ -72,6 +81,7 @@
   --gap-32: 32px;
   --gap-48: 48px;
   --gap-64: 64px;
+
 }
 
 *, *::before, *::after {
@@ -85,6 +95,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--white, #ffffff);
+  background-color: var(--white, #ffffff);
   
   font-family: var(--font-stack);
   color: var(--night, #121417);
@@ -96,6 +107,10 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+img {
+  border-radius: var(--border-radius);
 }
 
 input, button, textarea, select {
@@ -146,14 +161,6 @@ a:active {
 
 /* grid layout */
 .content-grid {
-  --padding-inline: 1rem;
-  --content-max-width: 900px;
-  --breakout-max-width: 1200px;
-
-  --breakout-size: calc(
-    (var(--breakout-max-width) - var(--content-max-width)) / 2
-  );
-
   display: grid;
   grid-template-columns:
   [full-width-start] minmax(var(--padding-inline), 1fr)

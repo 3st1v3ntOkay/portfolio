@@ -4,26 +4,24 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { preview } from '../data';
 
-import { Footer, Top } from '@/layouts';
-import { Card, FillButton, HeaderComp, IconTitle, Information } from '@/components';
+import { Footer, Main, Top } from '@/layouts';
+import { Card, FillButton, HeaderComp, IconTitle, Information, Row } from '@/components';
 
 import { Arrow } from '../svg';
 
 const Blog = () => {
   return (
-    <div className={style["content-grid"]}>
-      <div className={`${style["top"]} ${style.breakout}`}>
-        <Top />
-      </div>
+    <div className={style.flow}>
+      <Top />
 
-      <main className={`${style["main"]} ${style.breakout}`}>
+      <Main>
         <HeaderComp>
-          <Link href="/">Home</Link>
+          <Link href="/">back</Link>
           <h1>Blog page</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.</p>
         </HeaderComp>
 
-        <Information gap='wide'>
+        <Row>
           {preview.map(({
             id,
             title,
@@ -54,12 +52,10 @@ const Blog = () => {
               </Link>
             </Card>
           ))}
-        </Information>
-      </main>
+        </Row>
+      </Main>
 
-      <div className={`${style["bottom"]} ${style.breakout}`}>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }

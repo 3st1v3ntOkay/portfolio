@@ -4,24 +4,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { github } from '../data';
 
-import { Footer, Top } from '@/layouts';
-import { Card, HeaderComp, Information } from '@/components';
+import { Footer, Main, Top } from '@/layouts';
+import { Card, HeaderComp, Information, Row } from '@/components';
 
 const Projects = () => {
   return (
-    <div className={style["content-grid"]}>
-      <div className={`${style["top"]} ${style.breakout}`}>
-        <Top />
-      </div>
+    <div className={style.flow}>
+      <Top />
 
-      <main className={`${style["main"]}`}>
+      <Main>
         <HeaderComp>
-          <Link href="/">Home</Link>
+          <Link href="/">back</Link>
           <h1>Personal page</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque odit, adipisci voluptas doloribus, eveniet hic, provident facilis alias dignissimos iusto qui in error. Nostrum velit, at soluta quam itaque esse.</p>
         </HeaderComp>
 
-        <Information>
+        <Row>
           {github.map(({
             id,
             image,
@@ -46,12 +44,10 @@ const Projects = () => {
               <p className={style.size}>{year}</p>
             </Card>
           ))}
-        </Information>
-      </main>
+        </Row>
+      </Main>
 
-      <div className={`${style["bottom"]} ${style.breakout}`}>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }
