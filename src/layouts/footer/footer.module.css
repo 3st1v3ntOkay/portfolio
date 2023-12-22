@@ -1,11 +1,13 @@
 .footer {
   grid-column: span 2;
   grid-row: 3;
+  align-self: end;
 
   /* width: fit-content; */
   /* height: 76px; */
   height: auto;
   padding: var(--pad-16, 16px);
+  margin-bottom: var(--gap-16, 16px);
   
   display: flex;
   justify-content: space-between;

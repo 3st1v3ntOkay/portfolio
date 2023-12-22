@@ -1,6 +1,9 @@
 .header {
   grid-column: span 2;
   grid-row: 1;
+
+  align-self: start;
+  margin-top: var(--gap-16, 16px);
 }
 
 .menu {
