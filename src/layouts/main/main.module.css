@@ -1,0 +1,9 @@
+.mid {
+  grid-column: span 3;
+  grid-row: 2;
+  /* align-self: stretch; */
+
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-32, 32px);
+}

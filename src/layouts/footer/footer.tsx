@@ -14,7 +14,7 @@ const Footer = () => {
         height={24}
         alt="page logo"
       />
-      <span className={style.layout}>
+      {/* <span className={style.layout}>
         <p>thanks for visit me</p>
         <Image
           src={faceSmilling}
@@ -22,7 +22,7 @@ const Footer = () => {
           height={16}
           alt="e"
         />
-      </span>
+      </span> */}
     </footer>
   )
 }

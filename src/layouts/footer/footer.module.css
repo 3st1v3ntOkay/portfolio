@@ -1,13 +1,12 @@
 .footer {
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: 3;
-  align-self: end;
+  justify-self: end;
 
-  /* width: fit-content; */
-  /* height: 76px; */
+  width: fit-content;
   height: auto;
   padding: var(--pad-16, 16px);
-  margin-bottom: var(--gap-16, 16px);
+  margin-bottom: var(--padding-inline, 1rem);
   
   display: flex;
   justify-content: space-between;
@@ -25,16 +24,4 @@
   display: flex;
   align-items: center;
   column-gap: var(--gap-8, 8px);
-}
-
-@media (width < 768px) {
-  .footer {
-    width: calc(576px - 150px);
-  }
-}
-
-@media (width < 475px) {
-  .footer {
-    width: 100%;
-  }
 }

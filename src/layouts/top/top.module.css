@@ -1,16 +1,18 @@
 .header {
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: 1;
 
-  align-self: start;
-  margin-top: var(--gap-16, 16px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  row-gap: var(--gap-32, 32px);
+  
+  margin-top: var(--padding-inline, 1rem);
 }
 
 .menu {
-  height: auto;
-  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+  grid-row: 2;
 
-  margin-top: var(--gap-32, 32px);
+  height: auto;
 }
